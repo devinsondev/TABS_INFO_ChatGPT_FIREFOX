@@ -1,0 +1,31 @@
+/* Original Ink & Orange / Sand & Orange tokens from code_rules design brief. */
+:root {
+  color-scheme: light;
+  --ui-bg: #F6F0E6;
+  --ui-surface: #FFF9F1;
+  --ui-raised: #FFFCF7;
+  --ui-text: #2A251F;
+  --ui-muted: #655B51;
+  --ui-border: #D8CABC;
+  --ui-control-outline: #927B65;
+  --ui-accent: #B84A00;
+  --ui-accent-hover: #923A00;
+  --ui-on-accent: #FFFFFF;
+  --ui-focus: #B84A00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ui-bg: #101113;
+    --ui-surface: #191B1E;
+    --ui-raised: #22252A;
+    --ui-text: #F7F3ED;
+    --ui-muted: #BDB9B3;
+    --ui-border: #393B3F;
+    --ui-control-outline: #81868C;
+    --ui-accent: #FF9D3F;
+    --ui-accent-hover: #FFAF64;
+    --ui-on-accent: #1C1208;
+    --ui-focus: #FFB35E;
+  }
+}

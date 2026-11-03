@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>ChatGPT Tab Safe Monitor</title>
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.mjs"></script>
+</head>
+<body class="extension-ui">
+  <main>
+    <header class="app-header">
+      <div><p class="eyebrow">FIREFOX · SAFE MODE</p><h1>ChatGPT Tabs</h1></div>
+      <button id="refresh" class="secondary" type="button">Обновить</button>
+    </header>
+    <p class="muted intro">Только данные вкладок Firefox. Без доступа к сообщениям и DOM.</p>
+    <section class="metrics" aria-label="Статистика вкладок">
+      <div class="metric"><span>Чатов-вкладок</span><output id="total">—</output></div>
+      <div class="metric"><span>Активных</span><output id="active">—</output></div>
+      <div class="metric"><span>Выгружено</span><output id="discarded">—</output></div>
+      <div class="metric"><span>Окон</span><output id="windows">—</output></div>
+    </section>
+    <section aria-labelledby="tabs-heading">
+      <div class="section-heading"><h2 id="tabs-heading">Вкладки</h2><span id="split-count" class="muted"></span></div>
+      <p id="status" class="status" role="status" aria-live="polite">Получение информации…</p>
+      <ul id="tabs-list" class="tabs-list" aria-label="Список вкладок ChatGPT"></ul>
+    </section>
+    <footer>
+      <p class="muted">«Выгрузить» — штатное действие Firefox: вкладка остаётся открытой и загрузится при выборе. Несохранённые данные могут пропасть.</p>
+      <a href="https://github.com/devinsondev/TABS_INFO_ChatGPT_FIREFOX" target="_blank" rel="noopener noreferrer">Исходный код и ограничения</a>
+    </footer>
+  </main>
+</body>
+</html>
