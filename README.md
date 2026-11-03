@@ -17,7 +17,7 @@ Small privacy-first Firefox WebExtension. Shows **browser-provided metadata** fo
 - Browser resources are only observed indirectly by lifecycle state. No made-up RAM or performance numbers.
 - Discarding a background tab may lose unsaved inputs or page-internal transient state; user must choose the action. It does not close the tab.
 - No background scripts, periodic polling, automated tab manipulation or automatic data collection. Popup only reads a snapshot when opened or refreshed.
-- No promise that OpenAI approves the extension. See [AUTHOR_ASSESSMENT.md](AUTHOR_ASSESSMENT.md).
+- No promise that OpenAI approves the extension. See [AUTHOR_ASSESSMENT.md](AUTHOR_ASSESSMENT.md) and the [AI-assisted support exchange](SUPPORT_TRANSCRIPT.md), which expressly provides no official compliance determination.
 
 ## Installation (temporary, for personal testing)
 
